@@ -1,0 +1,28 @@
+title: 华南理工大学校学生会网络队
+email: scut-network@outlook.com
+description: >-
+    华南理工大学校学生会网络队。线上平台开发，为学生会提供技术支持。
+
+theme: minima
+
+collections:
+    members:
+        output: true
+        permalink: /:collection/:name
+
+defaults:
+    - scope:
+          path: "" # all files
+          type: "pages"
+      values:
+          layout: "page"
+    - scope:
+          path: ""
+          type: "posts"
+      values:
+          layout: "post"
+    - scope:
+          path: ""
+          type: "members"
+      values:
+          layout: "member"
